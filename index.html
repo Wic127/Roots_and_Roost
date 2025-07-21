@@ -43,7 +43,16 @@
       z-index: 2;
     }
 
-    /* Hero Section */
+  .hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
     .hero::before {
   content: '';
   position: absolute;
@@ -60,25 +69,6 @@
   z-index: 0;
   transition: transform 0.3s ease;
 }
-
-
-    .hero::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background:
-        linear-gradient(
-          180deg,
-          rgba(0, 0, 0, 0.6) 15%,
-          rgba(0, 0, 0, 0.4) 60%,
-          rgba(0, 0, 0, 0.7) 90%
-        ),
-        url('images/IMG_2820.png')
-        center center/cover no-repeat;
-      filter: brightness(0.75);
-      z-index: 0;
-      transition: transform 0.3s ease;
-    }
 
     .hero-content {
       position: relative;
